@@ -78,7 +78,7 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
       user_email: email,
       user_phone: phone,
       cart: cartDetails,
-      total: totalAmount,
+      total: total,
     })
     .then(
       () => {
@@ -102,3 +102,4 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
       }
     );
 });
+
