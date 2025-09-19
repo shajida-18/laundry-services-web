@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry Service</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#service-overview">Services</a></li>
+          <li><a href="#qualityDesc">About Us</a></li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+        <div class="user">Username</div>
+      </nav>
+    </header>
+    <section id="hero">
+      <div class="hero-left">
+        <h1>
+          Revitalize your clothes with expert
+          <span style="color: rgba(100, 248, 248, 0.89)">Laundry Services</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          quisquam facilis adipisci suscipit! Quis nihil officia consectetur
+          illo aspernatur nam.
+        </p>
+        <a href="#service-overview"><button class="hero-btn" >Book a Service Today</button></a>
+      </div>
+
+      <div class="hero-right">
+        <img src="laundry3.jpeg" alt="Laundry Service" />
+      </div>
+    </section>
+    <secction id="service-overview">
+      <div class="oa">Our Achievements</div>
+      <p>15+ <br>Laundry services</p>
+      <p>240+ <br>Happy Customers</p>
+      <p>2+ Yrs <br> Experience</div></p>
+    </secction>
+   <section id="booking-services">
+    <div class="services-left">
+      <h2>Our Services</h2>
+      <p class="note">Click on the Add button to add services to your cart.</p>
+      <hr>
+      <div class="service-item">
+        <span>Dry Cleaning</span>
+        <span class="price">₹200</span>
+        <button class="add-btn" data-name="Dry Cleaning" data-price="200">Add Item</button>
+        <button class="remove-btn" data-name="Dry Cleaning" style="display: none;">Remove Item</button>
+      </div>
+      <div class="service-item">
+        <span>Wash & Fold</span>
+        <span class="price">₹100</span>
+        <button class="add-btn" data-name="Wash & Fold" data-price="100">Add Item</button>
+        <button class="remove-btn" data-name="Wash & Fold" style="display: none;">Remove Item</button>
+      </div>
+      <div class="service-item">
+        <span>Ironing</span>
+        <span class="price">₹30</span>
+        <button class="add-btn" data-name="Ironing" data-price="30">Add Item</button>
+        <button class="remove-btn" data-name="Ironing" style="display: none;">Remove Item</button>
+      </div>
+      <div class="service-item">
+        <span>Laundry Cleaning</span>
+        <span class="price">₹300</span>
+        <button class="add-btn" data-name="Ironing" data-price="30">Add Item</button>
+        <button class="remove-btn" data-name="Ironing" style="display: none;">Remove Item</button>
+      </div>
+      <div class="service-item">
+        <span>Stain Removal</span>
+        <span class="price">₹500</span>
+        <button class="add-btn" data-name="Ironing" data-price="30">Add Item</button>
+        <button class="remove-btn" data-name="Ironing" style="display: none;">Remove Item</button>
+      </div>
+      <hr>
+        <p class="cart-tip">🛒 Add items to the cart and book now</p>
+    </div>
+    <div class="services-right">
+      <div class="cart">
+        <h3>Added Items</h3>
+        <table id="cart-table">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Service Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+          </tbody>
+        </table>
+        <div class="total">
+          <strong>Total Amount: ₹<span id="total-amount">0</span></strong>
+        </div>
+      </div>
+      <div class="booking-form">
+        <h3>Book Now</h3>
+        <form id="bookingForm">
+          <input type="text" 
+          name="user_name"
+          placeholder="Full Name" required />
+          <input type="email" 
+          name="user_email"
+          placeholder="Email ID" required />
+          <input type="tel" 
+          name="user_phone"
+          placeholder="Phone Number" required />
+          <button type="submit" class="book-btn">Book Now</button>
+          <p id="confirmationMessage" style="display: none; margin-top: 10px;"></p>
+        </form>
+      </div>
+    </div>
+   </section>
+   <section id="qualityDesc">
+      <div>
+        <p class="logo">
+          <span class="material-symbols-outlined"> local_laundry_service </span>
+        </p>
+        <h4 class="logo-text">Premium Services</h4>
+        <p class="desc">
+          Elevate your wardrobe with our meticulous dry cleaning,ensuring
+          garments look and feel as good as new
+        </p>
+      </div>
+      <div>
+        <p class="logo">
+          <span class="material-symbols-outlined"> support_agent </span>
+        </p>
+        <h4 class="logo-text">Quick Support</h4>
+        <p class="desc">
+          We're committed to providing prompt solutions to ensure your
+          experiences is smooth and worry free.
+        </p>
+      </div>
+      <div>
+        <p class="logo">
+          <span class="material-symbols-outlined"> delivery_truck_speed </span>
+        </p>
+        <h4 class="logo-text">Hassle Free Delivery</h4>
+        <p class="desc">
+          Enjoy seamless service with our convenient pickup and delivery
+          options,tailored to your schedule.
+        </p>
+      </div>
+      <div>
+        <p class="logo">
+          <span class="material-symbols-outlined"> handshake </span>
+        </p>
+        <h4 class="logo-text">Affordable Prices</h4>
+        <p class="desc">
+          Experience exceptional care without breaking the bank-our affordable
+          prices make laundry day stress-free.
+        </p>
+      </div>
+    </section>
+    <section id="newsletter">
+      <div class="text">
+        <p>Subscribe to our newsletter.</p>
+      </div>
+      <div class="form">
+        <form>
+          <input type="text" placeholder="First Name" />
+          <input type="email" placeholder="Email" />
+          <br />
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer-logo">
+        <h3>Logo</h3>
+      </div>
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </div>
+      <div class="footer-links">
+        <h3>important links</h3>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>contact</h3>
+        <address>
+          <a href="mailto:mail@site.com">mail@site.com</a>
+          <a href="tel:+911234567890">+91 1234567890</a>
+        </address>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: ("NxtepZ2FbYKgrlT76"),
+      });
+   })();
+</script>
+   
+
+  </body>
+</html>
